@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .header .logo{
+            background: Black;
+        }
+        .header > .logo{
+            background: yellow; /** header trên nó sẽ ăn cả 2 logo ban đầu chúng đều màu đen
+            nhưng khi chọn .header >.logo thì bắt đầu chương trình sẽ chọn lớp logo con trực tiếp của header
+            logo sub là lớp con của main-meu nên nó sẽ được gạch đi
+             */
+        }
+    </style>
+</head>
+<body>
+<div class ="header">
+    <div class="logo">logo</div>
+    <nav class="main-menu">
+        <div class="logo">Logo sub</div>
+        <ul class="main-menu-ul">
+            <li> <a href="#"> menu 1</a> </li>
+            <li> <a href="#"> menu 2</a> </li>
+            <li> <a href="#"> menu 3</a> </li>
+        </ul>
+    </nav>
+</div>
+
+
+</body>
+</html>
