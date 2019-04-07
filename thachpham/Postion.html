@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        .relative{
+            background: red;
+            width: 350px;
+            height: 350px;
+            margin:0 auto;
+            postion:relative;
+
+        }
+        img{
+            position:absolute;
+            top:55px;
+            left:35px;
+        }
+    </style>
+</head>
+<body>
+<pre>
+    Giá trị relative:Khi bạn sử dụng relative thì nó sẽ không thay đổi cấu trúc của phần tử
+    có nghĩa là nó sẽ không thay đổi cấu trúc của img nhưng bù lại chúng ta có thể
+    một số thuộc tính để thay đổi vị trí của nó.
+    Khi các bạn sử dụng các thuộc tính top,left,right,bottom:Một khi bạn dùng top thì ko dùng bottom
+    dùng left thì ko dùng right
+    Giá trị absolute:Nó sẽ hiển thị ở dạng tuyệt đối.Cách sử dụng giống relative
+    Nghĩa là:Nếu các bạn dùng phần tử mẹ là relative thì nó sẽ không thể ra ngoài
+    khu vực của relative.
+    chỉ có thể sử dụng số nguyên âm thì nó mới chạy ra ngoài được khi sử dụng top,... để di chuyển hướng
+    của nó
+    giá trị fixed:nó sẽ giữ nguyên hình khi mình để định dạng fixed
+    static : là dạng mặc định có nghĩa là ta ko thể sử dụng z-index hay top right ,...
+    để di chuyển hay effect nó
+    z-index nghĩa là:Ta có thể tùy chỉnh lớp hiển thị của nó
+    lớp lớn nằm trên
+    lớp nỏ nằm dưới
+</pre>
+<div  class="relative">
+<img src="12-01.jpg">
+ <p>Văn bản</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="thietkegiaodien/normalize.css">
+ <style type="text/css">
+  height{
+     background: red;
+     height: 1000px;
+     max-height: 500px;
+ }
+     width{
+         background: yellow;
+         width:300px;
+         min-width: 500px;
+     }
+ </style>
+    <title>Title</title>
+</head>
+<body>
+<h1>Thay đổi kích thước trong 1 block</h1>
+<pre>Các phần tử có thể tùy chỉnh kích thước của 1 block
+height:chiều cao
+max height: Là tối đa chiều cao mà bạn có thể đặt ra cho 1 block
+Vd:max-height: để là 500px; thì phần nội dung bạn có dài đên đâu nó cũng
+cố định lại trong vùng 500px và ngoài ra nếu bạn có thay đổi kích thước của height lên 1000 hay hơn
+nữa thì dữ liệu cũng chỉ hiển thị 500 px
+    min-height:Tương tự  min-width
+Width:chiều rông
+max-width:Tương tự max-height
+min-width:Chiều rộng tối thiểu bạn phải đặt.
+    VD:min-width:500px;
+    Nghĩa là bạn phải đặt tối thiểu chiều rộng cho box là 500px
+nếu bạn có đặt width nhỏ hơn thì box sẽ vẫn nhận là 500px or nội dung của nó có ngắn hơn
+thì box vẫn nhận là 500px</pre>
+<div id="height">Nội dung</div>
+<div id="width">Nội dung</div>
+</body>
+
+</html>

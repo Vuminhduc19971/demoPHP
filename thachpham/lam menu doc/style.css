@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Time New Roman", Times, serif;
+    font-size:15px;
+
+}
+#menu ul{
+    background: #777777;
+    width: 250px;
+
+}
+#menu ul li {
+    list-style-type: none;
+    width:auto;
+    height:40px;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+#menu ul li a{
+    text-decoration:none;
+    font-weight: bold;
+    display:block;
+}
+#menu ul li a:hover{
+    background: #FFC0CB;
+}
+#menu ul li >.menu1{
+    position:absolute;
+    left:500px;
+    display: none;
+    top:0;
+
+}
+#menu ul li:hover .menu1{
+    display: block;
+}

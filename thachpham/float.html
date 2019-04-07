@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="thietkegiaodien/normalize.css">
+    <style type="text/css">
+        .contaniner{
+            width:960px;
+            margin:auto;
+            border:1px solid black;
+            padding: 2em;
+        }
+        /*#content{
+            overflow:auto;
+        }*/
+        #post{
+            background: blue;
+            width:560px;
+            height: 300px;
+            float: left;
+        }
+        #sidebar{
+            background: #FF6347;
+            width:400px;
+            height: 300px;
+            float:right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<h1>float và clear float</h1>
+<pre>
+    Float là giá trị để di chuyển hướng của 1 block or inline
+    có 2 thuộc tính trong float là left and right
+    clear float dùng để làm gì:giả dụ như kích thước của content ngắn hơn
+    2 div block thì ta sẽ sử dụng clear float để điểu chỉnh chúng vào trong
+    content..Không nên tăng kích thước của content lên cho vừa nội dung vì
+    nếu nội dung quá dài ta sẽ rất khó để tính được chiều cao của nó
+    Và có 2 cách trước mắt thường được sử dụng là:
+    clear:both and overflow:auto(Nếu sử dụng cách này thì nền gán nó cho
+    giá trị cha của bài)
+    Chú ý:Kĩ thuật này rất quan trọng khi bạn tính đến việc chia cột trong website
+    khi bạn chia cột bạn nên đặt kích thước của thằng class cha thì bạn sẽ dễ chia
+    cột ở trong
+</pre>
+<div id="content" class="contaniner">
+    <div id="post">Nội dung Post</div>
+    <div id="sidebar">Nội dung của sidebar</div>
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>

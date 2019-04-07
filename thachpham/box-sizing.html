@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="thietkegiaodien/normalize.css">
+    <style type="text/css">
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        div1{
+    width:500px;
+    height:500px;
+    padding:20px;
+    background: blue;
+    border: 5px solid black;
+   box-sizing: content-box;
+}
+div2{
+    width:500px;
+    height:500px;
+    padding:20px;
+    background: red;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+        pre{
+            padding:20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Bozsizng</h1>
+<pre>Khi bạn đặt css như trên thì box model: sẽ có kích thước là 540px
+vì nó đã cộng thêm phần của padding 20px, h ta thêm border:5px thì box
+đã lên 550px..Giờ ta sẽ sử dụng box-sizing để áp dụng bao gồm padding và
+border.
+Content-box: chiều rộng và chiều dài sẽ dựa vào nội dung
+Nó sẽ ko bao gồm padding và border, còn nếu thêm box sẽ được thêm kích thước
+Border-Box:Thì phần content sẽ bị giảm đi theo số lượng khung border
+Vd:như width height:500px; khi ta sử dụng border box: thì chúng sẽ
+giảm phần nội dung 450px còn phần còn lại là border và padding
+Padding-box:Nó sẽ chỉ tính phần padding mà ko tính đến phần border
+Vd: như padding là 100px; thì box sẽ cộng thêm 100px cho phân kích thước
+ko tính border
+Chú ý:ta cần áp dụng tất cả các phần tử trong html là border-box vì đây là
+css nên ta nên viết thêm
+~moz-box-sizing:Dành cho các trình duyệt firefox phiên bản cũ
+~webkit-box-sizing:Dành cho gg chorme và opera phiên bản cũ</pre>
+<div1>nội dung</div1>
+<div2>Nội dung</div2>
+</body>
+</html>

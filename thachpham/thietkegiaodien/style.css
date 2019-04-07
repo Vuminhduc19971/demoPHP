@@ -1,0 +1,121 @@
+/* Style cơ bản trong size */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Time New Roman",Arial ,sans-serif;
+    font-weight: 300;
+    color: black;
+    line-height: 1.254;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a:hover , a:visited{
+    color:red;
+}
+/*Chia côt website */
+#container{
+    padding-left: 150px;
+    position: relative;
+    left:0;
+    width:100%;
+}
+#menu{
+    position:fixed;
+    height: 100%;
+    background: #191818;
+    width: 150px;
+    left:0;
+}/*menu */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+#menu ul li{
+    line-height: 2.9em;
+    height: 2.9em;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    position: relative;
+}
+#menu ul li a{
+    display: block;
+    color: #fff;
+    padding:0 1em;
+    border-bottom:1px solid #333;
+
+}
+#menu ul li:hover{
+    background: #FFC0CB;
+}
+.sub-menu{
+ width:130px;
+}
+#menu .sub-menu{
+    display:none;
+    position: absolute;
+    top:0;
+    left:150px;
+    background:black;
+
+}
+#menu ul li:hover .sub-menu{
+display: block;
+
+}
+/*content */
+#content{
+    padding:1em 8em ;
+}
+#header, .call-to-action{
+    text-align: center;
+}
+/*header */
+#header{}
+#header #logo{}
+#header #sologan{
+    color:gray;
+    font-size: 0.8em;
+}
+/*call-to-action */
+.call-to-action{
+    padding: 1.5em;
+    background: #777777;
+    border: 1px solid #e8e8e8;
+}
+/*row*/
+.row{
+    overflow: auto;
+    margin: 10px auto;
+}
+.row.col{
+    float:left;
+    width:1px;
+    margin-right:10px;
+}
+.row
+#footer{
+    font-size:10px;
+    border-top:1px solid gray;
+    color:#333333;
+    padding:1em 3em;
+
+}
+img{
+    display: inline-block;
+    width:100px;
+}
+
+
