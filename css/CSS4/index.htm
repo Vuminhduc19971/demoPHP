@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normarlize.css">
+	<style type="text/css">
+		.container .para1{
+			background: green;
+		}
+		.container >para1{
+			background: orange;
+		}
+		.container +p{
+			background: red;
+		}
+		.container ~ section{
+			background: violet;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p class="para1">Selector con long truc tiep</p>
+		<div class="row">
+			 <p class="para1">Selector lồng con</p>
+            <p class="para1">Selector lồng con</p>
+            <p class="para1">Selector lồng con</p>
+		</div>
+	</div>
+	<p>Thẻ p cùng cấp anh chị em 1</p>
+
+    <div> Thẻ div</div>
+
+    <section>Thẻ section cùng cấp anh chị em 2</section>
+
+    <section>Thẻ section cùng cấp anh chị em 3</section>
+
+</body>
+</html>

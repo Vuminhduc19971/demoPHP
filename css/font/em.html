@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+p{
+			font-family: "Time New Roman",Times,serif; /** nếu font chữ nào quá dài ta phải để trong ngoặc kép */
+			font-size: 30px;
+		}
+		.container{
+			font-size: 40px;
+		}
+		div{
+			font-family: cursive,times,serif;
+			font-size: 24px;
+		}
+		h1{
+			font-family: tahoma,Times, serif;/** nếu font chữ nào không có nó sẽ chọn tiếp font chữ tiếp theo để ghi vào tài liệu */
+			font-size: 2em;/* em là thẻ tương đối nên h1 sẽ tìm lên cha là container có font-size= 20px
+			=>h1= 2 *20=40px
+			 trong trường hợp .container không đọc được font-size thì nó sẽ tìm lên các thẻ ở cấp trên (cấp ông bà)
+			</style>
+</head>
+<body>
+	<div class="container">
+<h1>Ví dụ này cho thấy làm thế nào để tạo ra một bảng ưa thích.</h1>
+	<p>Ví dụ này cho thấy làm thế nào để <span>tạo ra</span> một bảng ưa thích.</p>
+	<div>Ví dụ này cho thấy làm thế nào để tạo ra một bảng ưa thích.</div>
+</div>
+</body>
+</html>

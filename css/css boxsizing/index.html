@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normarlize.css">
+	<style type="text/css">
+		#target1{
+			width:300px;
+			height: 300px;
+			background: green;
+			color: yellow;
+			box-sizing: border-box;
+		}
+		#target2{
+			width:300px;
+			height: 300px;
+			background:red;
+			color: white;
+			padding: 20px;
+			border:2px solid red;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+
+<h1>Box sizing</h1>
+   <h2>content-box ( width là 300 => with thực tế > 300 khi có padding và border</h2>
+    <p>Chiều rộng thực tế = css width + padding left + padding right + border left + border right</p>
+    <p>Chiều cao thực tế = css height + padding top + padding bottom + border top + border bottom</p>
+
+    <h2>border-box ( kiểm soát được chính xác kích cỡ ) 300 là 300</h2>
+    <p>Chiều rộng thực tế = css width </p>
+    <p>Chiều cao thực tế = css height </p>
+<div id="target1">box1</div>
+<div id="target2">box2</div>
+</body>
+</html>
